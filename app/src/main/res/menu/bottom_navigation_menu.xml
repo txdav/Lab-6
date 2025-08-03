@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_parks"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="Parks" />
+
+    <item
+        android:id="@+id/nav_campgrounds"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Campgrounds" />
+
+</menu>
