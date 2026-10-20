@@ -20,7 +20,7 @@ This project focuses on Android fragments, bottom navigation, API requests, Recy
 
 Watch the Lab 6 application demonstration:
 
-[**View Lab 6 Demo Video**](./Lab6.mp4)
+[**View Lab 6 Demo Video**](./Lab6.gif)
 
 ## Technologies Used
 
