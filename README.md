@@ -20,7 +20,7 @@ This project focuses on Android fragments, bottom navigation, API requests, Recy
 
 Watch the Lab 6 application demonstration:
 
-https://github.com/txdav/Lab-6/blob/main/Lab6.gif
+![Campground Explorer Lab 4 Demo](Lab4.1.gif)
 
 
 
