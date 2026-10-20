@@ -7,7 +7,9 @@ plugins {
 
 def apikeyPropertiesFile = rootProject.file("apikey.properties")
 def apikeyProperties = new Properties()
-apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+if (apikeyPropertiesFile.exists()) {
+    apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+}
 
 android {
     namespace = "com.codepath.lab6"
@@ -22,7 +24,8 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "API_KEY", "\"${apikeyProperties['API_KEY']}\"")
+        def apiKey = apikeyProperties.getProperty("API_KEY", "YOUR_API_KEY_HERE")
+        buildConfigField("String", "API_KEY", "\"${apiKey}\"")
     }
 
     buildTypes {
